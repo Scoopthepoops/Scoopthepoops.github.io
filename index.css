@@ -1,0 +1,226 @@
+/* Parent Size */
+
+html,
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Video Background */
+.main {
+padding-top: 10%;
+padding-bottom: 10%;
+}
+
+.fullscreen-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Video Overlay */
+
+.video-overlay {
+    height: 100%;
+    width: 100%;
+    padding: 5% 5% 5% 50%;
+}
+
+/*Logo*/
+
+.l1 {
+    height: 10%;
+    width: 10%;
+    margin-bottom: 2%;
+}
+
+/* Text Titles */
+
+.m1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.m2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.7vw;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.m3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75vw;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    color: #e900ff;
+}
+
+.m4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: .6vw;
+    font-weight: 500;
+    letter-spacing: 0.4vw;
+    text-transform: uppercase;
+
+}
+
+/*Button */
+
+.b1 {
+    width: 10vw;
+    height: 3vw;
+    color: white;
+    border: white solid;
+    border-width: 0vw 0vw 0.1vw 0vw;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 5%;
+}
+
+.b1:hover {
+    color: black;
+    border: white solid 0.1vw;
+    background-color: white;
+    letter-spacing: .3vw;
+}
+
+/* Phone Screen */
+
+@media only screen and (max-width: 800px) {
+    .m1 {
+        font-size: 3vw;
+    }
+
+    .m2 {
+        font-size: 1.5vw;
+        margin-top: -2%;
+    }
+
+    .m3 {
+        font-size: 1.5vw;
+    }
+
+    .b1 {
+        width: 15vw;
+        height: 5.5vw;
+        margin-top: 5%;
+    }
+
+    .l1 {
+        height: 35%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .m1 {
+        font-size: 6vw;
+    }
+
+    .m2 {
+        font-size: 3vw;
+    }
+
+    .m3 {
+        font-size: 2vw;
+    }
+
+    .b1 {
+        width: 30vw;
+        height: 7.5vw;
+        margin-top: 5%;
+    }
+
+    .l1 {
+        height: 40%;
+        margin-top: 10%;
+    }
+    
+    .video-overlay {
+        padding: 5% 5% 5% 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .m1 {
+        font-size: 7vw;
+    }
+
+    .m2 {
+        font-size: 3vw;
+    }
+
+    .m3 {
+        font-size: 2vw;
+    }
+
+    .b1 {
+        width: 30vw;
+        height: 7.5vw;
+        margin-top: 5%;
+    }
+
+    .l1 {
+        height: 40%;
+        width: 40%;
+        margin-top: 25%;
+    }
+    .video-overlay {
+        padding: 5%;
+    }
+}
